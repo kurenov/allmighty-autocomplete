@@ -1,44 +1,66 @@
-/* AUTOCOMPLETE */
+/* AUTOCOMPLETE by Olzhas Kurenov */
 
 .autocomplete{
-  width: 100%;
-  position: relative;
+    width: 100%;
+    position: relative;
 }
 
-.autocomplete input{
-  font-size: 1.2em;
-  width: 100%;
-  padding:0.4em;
+.autocomplete input {
+    box-sizing: border-box;
+    font-size: 1.2em;
+    width: 250px;
+    padding:0.4em;
 }
 
 .autocomplete ul{
-  position: absolute;
-  left: 0;
-  width: 100%;
-  border-left: 1px solid #888;
-  border-right: 1px solid #888;
-  border-bottom: 1px solid #888;
-  z-index: 1;
+    position: relative;
+    box-sizing: border-box;
+    left: 0;
+    width: 250px;
+    border-left: 1px solid #888;
+    border-right: 1px solid #888;
+    border-bottom: 1px solid #888;
+    background-color: white;
+    padding: 0;
+    margin: 0;
 }
 
 .autocomplete li{
-  text-align: left;
-  list-style:none;
-  width: 100%;
-  padding:0.4em;
-  background-color: #fff;
+    text-align: left;
+    list-style:none;
+    box-sizing: border-box;
+    width: 248px;
+    padding:10px 5px;
+    border-top: 1px solid #bbb;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.autocomplete li:hover {
+    background-color: #eee;
 }
 
 .autocomplete li.active{
-  width: 100%;
-  background-color: #4bf;
+    width: 100%;
+    background-color: #eee;
 }
 
-.autocomplete .highlight {
-  background-color: #E2E2E2;
+.autocomplete .bold {
+    /*background-color: #E2E2E2;*/
+    font-weight: bold;
 }
 
-.autocomplete li.active .highlight {
-  background: #666;
-  color: #fff;
+.highlight {
+    background-color: #E2E2E2;
+}
+
+.autocomplete li.active .bold {
+    /*background: #666;*/
+    /*color: #fff;*/
+}
+
+.autocomplete-small-text {
+    color: #999;
+    font-size: 10px;
 }
