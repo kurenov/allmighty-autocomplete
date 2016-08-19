@@ -1,11 +1,15 @@
 allmighty-autocomplete
 ======================
 
+Originally forked from https://github.com/JustGoscha/allmighty-autocomplete
+
+by Olzhas Kurenov
+
 Simple to use autocomplete directive in a module for AngularJS!
 Supports arrow keys to traverse suggestions as well as mouse input.
 You can load the suggestions from a remote REST API, it also supports promises.
 
-Checkout [the demo](http://justgoscha.github.io/allmighty-autocomplete/) to see what it does.
+Checkout [the demo](http://newwidget.dev.gbooking.ru/#/4000000003638/company) to see what it does.
 
 ## Setup
 
@@ -118,6 +122,12 @@ JavaScript:
 + select if suggestions should be shown after clicking on input with new parameter `click-activation`
 + Added customizable placeholders for input line
 + FIXED multiple autocomplete directives in one controller are now possible and behave as expected
+
+
+***15.05.2016***
++ Bugfixes
++ Multiline support
++ Better highliting
 
 
 
